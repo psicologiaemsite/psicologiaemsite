@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sites profissionais para psicólogos. Atraia mais pacientes, construa sua presença digital e cresça seu consultório." />
+  <title>Psicologia em Site — Presença Digital para Psicólogos</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor (desktop) -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ══════════════════════════════
+       NAV
+  ══════════════════════════════ -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">Psicologia <span>em Site</span></a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="#por-que">Por que</a></li>
+      <li><a href="#pacotes">Pacotes</a></li>
+      <li><a href="#processo">Processo</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contato" class="nav-cta">Começar agora →</a></li>
+    </ul>
+
+    <!-- Mobile hamburger -->
+    <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <nav class="nav-drawer" id="navDrawer" aria-label="Menu mobile">
+    <a href="#por-que">Por que</a>
+    <a href="#pacotes">Pacotes</a>
+    <a href="#processo">Processo</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contato" class="drawer-cta">Começar agora →</a>
+  </nav>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-lines"></div>
+
+    <div class="hero-left">
+      <div class="hero-tag">Presença digital para psicólogos</div>
+
+      <h1>
+        Seu consultório<br/>
+        <em>merece</em> existir<br/>
+        <span class="accent">online.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Criamos sites profissionais, acolhedores e estratégicos para psicólogos que querem atrair mais pacientes e se posicionar como referência em sua área.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#pacotes" class="btn-primary">
+          Ver pacotes
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+        <a href="#processo" class="btn-ghost">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="8" cy="8" r="7"/><path d="M8 5v3l2 2"/>
+          </svg>
+          Como funciona
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num count-up" data-target="127">0</div>
+          <div class="stat-label">Sites entregues</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num count-up" data-target="98">0</div>
+          <div class="stat-label">% de satisfação</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num count-up" data-target="7">0</div>
+          <div class="stat-label">Dias para entrega</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phone mockup (desktop only) -->
+    <div class="hero-right">
+      <div class="phone-mockup">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-header">
+            <div class="phone-logo">Gabriel da Silva</div>
+          </div>
+          <div class="phone-hero-section">
+            <div class="phone-tag-small">Psicólogo &amp; Psicanalista</div>
+            <div class="phone-headline">
+              Existe um lugar onde sua história pode ser ouvida com <em>tempo e verdade</em>
+            </div>
+            <div class="phone-sub-text">
+              Você não precisa passar por isso sozinho. Aqui, cada encontro é um espaço para respirar.
+            </div>
+            <div class="phone-cta-btn">Agendar atendimento →</div>
+          </div>
+          <div class="phone-bottom-img">✦</div>
+        </div>
+        <div class="phone-floating-badge">
+          <div class="badge-icon">⭐</div>
+          <div class="badge-text">
+            <div class="badge-num">4.9</div>
+            <div class="badge-label">avaliação média</div>
+          </div>
+        </div>
+        <div class="phone-floating-badge2">
+          <div class="badge2-label">+<br/>pacientes novos todo mês</div>
+          <div class="badge2-sub">Crie conexão antes do primeiro contato pelo seu site</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       MARQUEE
+  ══════════════════════════════ -->
+  <div class="marquee-section">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-item"><strong>Design acolhedor</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>SEO para psicólogos</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>Captação de pacientes</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>Entrega em 7 dias</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>Responsivo &amp; rápido</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>WhatsApp integrado</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>Google Analytics</strong></div>
+      <div class="marquee-dot"></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item"><strong>Design acolhedor</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>SEO para psicólogos</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>Captação de pacientes</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>Entrega em 7 dias</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>Responsivo &amp; rápido</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>WhatsApp integrado</strong></div>
+      <div class="marquee-dot"></div>
+      <div class="marquee-item"><strong>Google Analytics</strong></div>
+      <div class="marquee-dot"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+       PROBLEM
+  ══════════════════════════════ -->
+  <section id="por-que">
+    <div class="problem-section">
+      <div class="section-tag">O problema</div>
+
+      <div class="problem-grid">
+        <div>
+          <h2 class="section-title reveal">
+            Seu trabalho é<br/>
+            <em>transformar vidas.</em><br/>
+            Mas quem te encontra?
+          </h2><br>
+          <div class="problem-text reveal reveal-delay-1">
+            <p>A maioria dos psicólogos depende de indicações e espera passivamente por novos pacientes. <strong>Mas o comportamento do paciente mudou.</strong></p>
+            <p>Hoje, 78% das pessoas pesquisam online antes de agendar uma consulta. Se você não aparece, outra pessoa aparece no seu lugar.</p>
+            <p>Um site bem construído não é apenas um cartão de visitas — <strong>é o seu consultório aberto 24h por dia.</strong></p>
+          </div>
+        </div>
+
+        <div class="problem-cards">
+          <div class="problem-card reveal">
+            <div class="problem-card-icon">🔍</div>
+            <div>
+              <h4>Invisibilidade digital</h4>
+              <p>Sem presença online, novos pacientes simplesmente não te encontram — independente de quão bom você seja.</p>
+            </div>
+          </div>
+          <div class="problem-card reveal reveal-delay-1">
+            <div class="problem-card-icon">😰</div>
+            <div>
+              <h4>Primeira impressão falha</h4>
+              <p>Um site amador ou a ausência dele transmite insegurança antes mesmo do primeiro contato.</p>
+            </div>
+          </div>
+          <div class="problem-card reveal reveal-delay-2">
+            <div class="problem-card-icon">📉</div>
+            <div>
+              <h4>Dependência de indicações</h4>
+              <p>Contar apenas com indicações é frágil. Um site transforma estranhos em pacientes de forma consistente.</p>
+            </div>
+          </div>
+          <div class="problem-card reveal reveal-delay-3">
+            <div class="problem-card-icon">💸</div>
+            <div>
+              <h4>Concorrência crescente</h4>
+              <p>O mercado de psicologia cresceu 200% em 5 anos. Quem se posiciona digitalmente sai na frente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       STORY / LEVELS
+  ══════════════════════════════ -->
+  <section class="story-section" id="pacotes">
+    <div style="max-width:1300px;margin:0 auto;">
+      <div class="section-tag reveal">Níveis de presença</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Cada fase da sua carreira<br/>
+        pede uma <em>presença diferente.</em>
+      </h2>
+      <p class="story-intro reveal reveal-delay-2">
+        Desenvolvemos nossos pacotes baseados na jornada real do psicólogo — desde quem está começando até quem já tem uma clínica consolidada.
+      </p>
+
+      <div class="levels-container">
+
+        <div class="level-card level-starter reveal">
+          <div class="level-top">
+            <div class="level-number">01</div>
+            <div class="level-price-col">
+              <div class="level-badge badge-starter">Starter</div>
+              <div class="level-price"><span>R$</span> 699</div>
+            </div>
+          </div>
+          <div class="level-info">
+            <h3>Página Única</h3>
+            <div class="level-subtitle">Para psicólogos que estão começando e precisam de presença rápida</div>
+            <div class="level-features">
+              <span class="level-feat">1 página completa</span>
+              <span class="level-feat">Design acolhedor</span>
+              <span class="level-feat">WhatsApp integrado</span>
+              <span class="level-feat">Responsivo</span>
+              <span class="level-feat">SEO básico</span>
+            </div>
+            <a href="https://wa.me/5541988707816?text=Olá!%20Tenho%20interesse%20no%20pacote%20Starter%20(Página%20Única)" class="level-cta-btn cta-sage" target="_blank" rel="noopener">
+              Começar →
+            </a>
+          </div>
+        </div>
+
+        <div class="level-card level-pro featured reveal reveal-delay-1">
+          <div class="level-top">
+            <div class="level-number">02</div>
+            <div class="level-price-col">
+              <div class="level-badge badge-pro">Mais vendido</div>
+              <div class="level-price"><span>R$</span> 899</div>
+            </div>
+          </div>
+          <div class="level-info">
+            <h3>2 Páginas</h3>
+            <div class="level-subtitle">Para quem quer se diferenciar e converter mais visitantes em pacientes</div>
+            <div class="level-features">
+              <span class="level-feat highlight">Tudo do Starter</span>
+              <span class="level-feat">Página sobre + home</span>
+              <span class="level-feat">Galeria de espaço</span>
+              <span class="level-feat">Blog integrado</span>
+              <span class="level-feat highlight">SEO avançado</span>
+              <span class="level-feat">Google Analytics</span>
+            </div>
+            <a href="https://wa.me/5541988707816?text=Olá!%20Tenho%20interesse%20no%20pacote%20Pro%20(2%20Páginas)" class="level-cta-btn cta-clay" target="_blank" rel="noopener">
+              Começar →
+            </a>
+          </div>
+        </div>
+
+        <div class="level-card level-elite reveal reveal-delay-2">
+          <div class="level-top">
+            <div class="level-number">03</div>
+            <div class="level-price-col">
+              <div class="level-badge badge-elite">Elite</div>
+              <div class="level-price"><span>R$</span> 1.499</div>
+            </div>
+          </div>
+          <div class="level-info">
+            <h3>5 Páginas</h3>
+            <div class="level-subtitle">Para clínicas e psicólogos consolidados que querem dominar digitalmente</div>
+            <div class="level-features">
+              <span class="level-feat highlight">Tudo do Pro</span>
+              <span class="level-feat">5 páginas completas</span>
+              <span class="level-feat highlight">Agendamento online</span>
+              <span class="level-feat">Área de artigos</span>
+              <span class="level-feat">Chat ao vivo</span>
+              <span class="level-feat highlight">Estratégia de SEO</span>
+              <span class="level-feat">Suporte prioritário</span>
+            </div>
+            <a href="https://wa.me/5541988707816?text=Olá!%20Tenho%20interesse%20no%20pacote%20Elite%20(5%20Páginas)" class="level-cta-btn cta-gold" target="_blank" rel="noopener">
+              Começar →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PREVIEW (interactive device switcher)
+  ══════════════════════════════ -->
+  <section class="preview-section" id="preview">
+    <div class="preview-inner">
+
+      <!-- Header -->
+      <div class="preview-header">
+        <div class="section-tag">Exemplo real</div>
+        <h2 class="section-title reveal">Seu site pode ser <em>assim</em></h2>
+        <p class="preview-subtitle reveal reveal-delay-1">Navegue pelo site do cliente diretamente aqui — alterne entre as versões para ver como fica em cada dispositivo.</p>
+      </div>
+
+      <!-- Left text col + Device viewer -->
+      <div class="preview-wrap reveal">
+
+        <!-- Info column -->
+        <div class="preview-info">
+          <div class="preview-badge">✦ Site real de cliente</div>
+          <h3 class="preview-name">Gabriel da Silva<br/><em>Psicólogo &amp; Psicanalista</em></h3>
+          <p class="preview-desc">Um site que transmite confiança, acolhimento e profissionalismo — cada seção pensada para converter visitantes em pacientes.</p>
+          <div class="preview-pill-list">
+            <div class="preview-pill">Design acolhedor e profissional</div>
+            <div class="preview-pill">Seções estratégicas de conversão</div>
+            <div class="preview-pill">WhatsApp sempre visível</div>
+            <div class="preview-pill">100% responsivo</div>
+            <div class="preview-pill">Otimizado para o Google</div>
+          </div>
+          <div class="preview-info-actions">
+            <a href="https://wa.me/5541988707816?text=Olá!%20Quero%20um%20site%20assim%20para%20meu%20consultório" class="btn-primary" target="_blank" rel="noopener">
+              Quero um site assim →
+            </a>
+            <button class="btn-expand-modal" id="btnExpandModal">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 5V2h3M11 2h3v3M14 11v3h-3M5 14H2v-3"/></svg>
+              Ver em tela cheia
+            </button>
+          </div>
+        </div>
+
+        <!-- Device viewer column -->
+        <div class="device-viewer-col">
+
+          <!-- Device toggle buttons -->
+          <div class="device-tabs">
+            <button class="device-tab active" data-device="desktop">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              Computador
+            </button>
+            <button class="device-tab" data-device="tablet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="18" r="1"/></svg>
+              Tablet
+            </button>
+            <button class="device-tab" data-device="mobile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="2"/><circle cx="12" cy="18" r="1"/></svg>
+              Celular
+            </button>
+          </div>
+
+          <!-- Device frame -->
+          <div class="device-stage" id="deviceStage">
+
+            <!-- DESKTOP frame -->
+            <div class="device-frame df-desktop active" id="dfDesktop">
+              <div class="df-desktop-outer">
+                <div class="df-desktop-screen">
+                  <div class="df-browser-bar">
+                    <div class="df-dots"><span></span><span></span><span></span></div>
+                    <div class="df-url">gabrieldasilva.psi.br</div>
+                    <div class="df-expand-btn" id="desktopExpandBtn" title="Expandir">⛶</div>
+                  </div>
+                  <div class="df-iframe-wrap">
+                    <iframe id="iframeDesktop" src="demo/index.html" scrolling="yes" title="Site Gabriel da Silva — Desktop"></iframe>
+                  </div>
+                </div>
+                <div class="df-desktop-stand"></div>
+                <div class="df-desktop-base"></div>
+              </div>
+            </div>
+
+            <!-- TABLET frame -->
+            <div class="device-frame df-tablet" id="dfTablet">
+              <div class="df-tablet-outer">
+                <div class="df-tablet-camera"></div>
+                <div class="df-tablet-screen">
+                  <iframe id="iframeTablet" src="" scrolling="yes" title="Site Gabriel da Silva — Tablet"></iframe>
+                </div>
+                <div class="df-tablet-btn"></div>
+              </div>
+            </div>
+
+            <!-- MOBILE frame -->
+            <div class="device-frame df-mobile" id="dfMobile">
+              <div class="df-mobile-outer">
+                <div class="df-mobile-notch"></div>
+                <div class="df-mobile-screen">
+                  <iframe id="iframeMobile" src="" scrolling="yes" title="Site Gabriel da Silva — Mobile"></iframe>
+                </div>
+                <div class="df-mobile-bar">
+                  <div class="df-home-indicator"></div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /device-stage -->
+        </div><!-- /device-viewer-col -->
+      </div><!-- /preview-wrap -->
+    </div><!-- /preview-inner -->
+  </section>
+
+  <!-- ══════════════════════════════
+       FULLSCREEN MODAL
+  ══════════════════════════════ -->
+  <div class="preview-modal" id="previewModal" role="dialog" aria-modal="true" aria-label="Visualização em tela cheia">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-inner">
+      <div class="modal-topbar">
+        <div class="modal-dots"><span></span><span></span><span></span></div>
+        <div class="modal-url">gabrieldasilva.psi.br</div>
+        <div class="modal-device-tabs">
+          <button class="modal-dtab active" data-mdevice="desktop">🖥 Desktop</button>
+          <button class="modal-dtab" data-mdevice="tablet">📱 Tablet</button>
+          <button class="modal-dtab" data-mdevice="mobile">📲 Celular</button>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+      </div>
+      <div class="modal-viewport" id="modalViewport">
+        <div class="modal-device-wrap" id="modalDeviceWrap">
+          <iframe id="iframeModal" src="" scrolling="yes" title="Visualização completa"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+       PROCESS
+  ══════════════════════════════ -->
+  <section id="processo">
+    <div class="process-section">
+      <div class="process-header">
+        <div class="section-tag reveal">Como funciona</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Do zero ao ar em<br/>
+          <em>apenas 4 passos</em>
+        </h2>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-number" data-num="1">✦</div>
+          <h4>Escolha sua estrutura</h4>
+          <p>Você escolhe o pacote ideal para o momento da sua carreira. Sem complicação.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-1">
+          <div class="step-number" data-num="2">✦</div>
+          <h4>Briefing personalizado</h4>
+          <p>Coletamos todas as informações sobre você, sua abordagem e seu público ideal.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="step-number" data-num="3">✦</div>
+          <h4>Criação &amp; revisão</h4>
+          <p>Nossa equipe cria seu site. Você revisa e sugere ajustes — incluímos até 3 rodadas.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="step-number" data-num="4">✦</div>
+          <h4>Publicação ativa</h4>
+          <p>Seu site vai ao ar, otimizado, seguro e pronto para receber seus futuros pacientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════ -->
+  <section class="testimonial-section" id="depoimentos">
+    <div style="max-width:1300px;margin:0 auto;">
+      <div class="section-tag reveal">Depoimentos</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Psicólogos que já deram<br/>
+        o próximo <em>passo.</em>
+      </h2>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal">
+          <div class="t-quote">"</div>
+          <p class="t-text">Em menos de 30 dias com o site no ar, recebi 12 novos pacientes vindos do Google. Nunca imaginei que seria tão rápido.</p>
+          <div class="t-author">
+            <div class="t-avatar">👩‍⚕️</div>
+            <div>
+              <div class="t-name">Dra. Camila Rocha</div>
+              <div class="t-role">Psicóloga Clínica — São Paulo</div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="t-quote">"</div>
+          <p class="t-text">O site ficou lindo e super profissional. Meus pacientes me elogiam o site antes mesmo de me conhecer pessoalmente.</p>
+          <div class="t-author">
+            <div class="t-avatar">🧑‍⚕️</div>
+            <div>
+              <div class="t-name">Dr. Felipe Andrade</div>
+              <div class="t-role">Psicoterapeuta — Curitiba</div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="t-quote">"</div>
+          <p class="t-text">Tinha medo de investir, mas foi a melhor decisão da minha carreira. O retorno veio rápido e continua crescendo.</p>
+          <div class="t-author">
+            <div class="t-avatar">👩‍💼</div>
+            <div>
+              <div class="t-name">Dra. Mariana Souza</div>
+              <div class="t-role">Psicóloga Infantil — Rio de Janeiro</div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       TECH
+  ══════════════════════════════ -->
+  <section>
+    <div class="tech-section">
+      <div class="section-tag reveal">Tecnologia</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Focada no crescimento<br/>
+        <em>do seu consultório</em>
+      </h2>
+
+      <div class="tech-grid">
+        <div class="tech-card reveal">
+          <div class="tech-icon">📱</div>
+          <h4>100% Responsivo</h4>
+          <p>Seu site funciona perfeitamente em qualquer dispositivo — celular, tablet ou computador.</p>
+        </div>
+        <div class="tech-card reveal reveal-delay-1">
+          <div class="tech-icon">🔍</div>
+          <h4>SEO Estratégico</h4>
+          <p>Otimizado para aparecer quando alguém pesquisar "psicólogo em [sua cidade]" no Google.</p>
+        </div>
+        <div class="tech-card reveal reveal-delay-2">
+          <div class="tech-icon">⚡</div>
+          <h4>Alta Performance</h4>
+          <p>Carregamento rápido é essencial — sites lentos perdem pacientes antes mesmo de carregar.</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-icon">💬</div>
+          <h4>WhatsApp Integrado</h4>
+          <p>Botão flutuante que converte visitantes em contatos com um clique — disponível 24h.</p>
+        </div>
+        <div class="tech-card reveal reveal-delay-1">
+          <div class="tech-icon">📊</div>
+          <h4>Analytics &amp; Dados</h4>
+          <p>Acompanhe quantas pessoas visitam seu site, de onde vêm e o que mais acessam.</p>
+        </div>
+        <div class="tech-card reveal reveal-delay-2">
+          <div class="tech-icon">🔒</div>
+          <h4>Seguro &amp; Confiável</h4>
+          <p>Certificado SSL, hospedagem premium e backup automático para sua tranquilidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PRICING
+  ══════════════════════════════ -->
+  <section class="pricing-section">
+    <div class="pricing-inner">
+      <div class="pricing-header">
+        <div class="section-tag">Investimento</div>
+        <h2 class="section-title reveal">Pacotes pensados<br/><em>para sua realidade</em></h2>
+        <p style="color:var(--mist);font-size:.95rem;margin-top:1rem;font-weight:300;" class="reveal reveal-delay-1">Sem mensalidades. Sem pegadinhas. Pagamento único.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Starter -->
+        <div class="price-card reveal">
+          <div class="price-header">
+            <div class="price-badge pb-green">Starter</div>
+            <div class="price-name">Página Única</div>
+            <div class="price-desc">Para psicólogos que estão iniciando sua presença digital</div>
+            <div class="price-amount">
+              <div class="price-cur">R$</div>
+              <div class="price-num">699</div>
+              <div class="price-period">único</div>
+            </div>
+          </div>
+          <div class="price-body">
+            <ul class="price-features">
+              <li>Design personalizado acolhedor</li>
+              <li>1 página completa e estratégica</li>
+              <li>Responsivo (mobile-first)</li>
+              <li>WhatsApp flutuante</li>
+              <li>Formulário de contato</li>
+              <li>SEO básico (Google)</li>
+              <li>Entrega em 7 dias úteis</li>
+              <li class="muted">Blog / artigos</li>
+              <li class="muted">Agendamento online</li>
+              <li class="muted">Suporte estendido</li>
+            </ul>
+            <a href="https://wa.me/5541988707816?text=Olá!%20Tenho%20interesse%20no%20pacote%20Starter%20(R$%20699)" class="price-btn price-btn-ghost" target="_blank" rel="noopener">
+              Começar agora
+            </a>
+          </div>
+        </div>
+
+        <!-- Pro (featured) -->
+        <div class="price-card featured reveal reveal-delay-1">
+          <div class="price-header">
+            <div class="price-badge pb-white">⭐ Mais vendido</div>
+            <div class="price-name">2 Páginas</div>
+            <div class="price-desc">A escolha certa para quem quer se diferenciar e converter mais</div>
+            <div class="price-amount">
+              <div class="price-cur">R$</div>
+              <div class="price-num">899</div>
+              <div class="price-period">único</div>
+            </div>
+          </div>
+          <div class="price-body">
+            <ul class="price-features">
+              <li>Tudo do plano Starter</li>
+              <li>2 páginas (Home + Sobre)</li>
+              <li>Galeria do espaço físico</li>
+              <li>Depoimentos de pacientes</li>
+              <li>SEO avançado + palavras-chave</li>
+              <li>Google Analytics integrado</li>
+              <li>Instagram feed integrado</li>
+              <li>Entrega em 7 dias úteis</li>
+              <li>1 revisão de conteúdo inclusa</li>
+              <li class="muted">Agendamento online</li>
+            </ul>
+            <a href="https://wa.me/5541988707816?text=Olá!%20Tenho%20interesse%20no%20pacote%20Pro%20(R$%20899)" class="price-btn price-btn-solid" target="_blank" rel="noopener">
+              Quero este →
+            </a>
+          </div>
+        </div>
+
+        <!-- Elite -->
+        <div class="price-card reveal reveal-delay-2">
+          <div class="price-header">
+            <div class="price-badge pb-clay">Elite</div>
+            <div class="price-name">5 Páginas</div>
+            <div class="price-desc">Para clínicas e psicólogos consolidados que lideram o digital</div>
+            <div class="price-amount">
+              <div class="price-cur">R$</div>
+              <div class="price-num">1.499</div>
+              <div class="price-period">único</div>
+            </div>
+          </div>
+          <div class="price-body">
+            <ul class="price-features">
+              <li>Tudo do plano Pro</li>
+              <li>5 páginas completas</li>
+              <li>Agendamento online integrado</li>
+              <li>Blog / área de artigos</li>
+              <li>Estratégia completa de SEO</li>
+              <li>Chat ao vivo</li>
+              <li>Suporte prioritário 30 dias</li>
+              <li>3 revisões de conteúdo</li>
+              <li>Relatório mensal de acessos</li>
+              <li>Consultoria de posicionamento</li>
+            </ul>
+            <a href="https://wa.me/5541988707816?text=Olá!%20Tenho%20interesse%20no%20pacote%20Elite%20(R$%201.499)" class="price-btn price-btn-clay" target="_blank" rel="noopener">
+              Quero este →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       QUEM FAZ
+  ══════════════════════════════ -->
+  <section class="quemfaz-section" id="quemfaz">
+    <div class="quemfaz-inner">
+
+      <div class="quemfaz-card reveal">
+
+        <!-- Photo side -->
+        <div class="qf-photo-col">
+          <div class="qf-photo-wrap">
+            <div class="qf-photo-placeholder">
+              <!-- Replace src with real photo when available -->
+              <div class="qf-avatar-fallback">
+                <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="40" cy="30" r="16" fill="var(--sage-mid)"/>
+                  <ellipse cx="40" cy="68" rx="26" ry="16" fill="var(--sage-mid)"/>
+                </svg>
+              </div>
+            </div>
+            <div class="qf-photo-badge">
+              <span class="qf-badge-dot"></span>
+              Disponível para novos projetos
+            </div>
+          </div>
+          <!-- Credentials strip -->
+          <div class="qf-creds">
+            <div class="qf-cred">
+              <div class="qf-cred-icon">🎓</div>
+              <div>
+                <div class="qf-cred-title">Tecnólogo</div>
+                <div class="qf-cred-desc">Análise e Desenvolvimento de Sistemas — PUCPR</div>
+              </div>
+            </div>
+            <div class="qf-cred">
+              <div class="qf-cred-icon">📜</div>
+              <div>
+                <div class="qf-cred-title">Pós-Graduação</div>
+                <div class="qf-cred-desc">Desenvolvimento Web - UTFPR</div>
+              </div>
+            </div>
+            <div class="qf-cred">
+              <div class="qf-cred-icon">💼</div>
+              <div>
+                <div class="qf-cred-title">Especialidade Web</div>
+                <div class="qf-cred-desc">Site para Psicólogos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="qf-text-col">
+          <div class="section-tag">Quem faz</div>
+          <h2 class="section-title">
+            Por trás de cada site,<br/>
+            um profissional <em>dedicado.</em>
+          </h2>
+          <p class="qf-bio">
+            Olá! Sou o Eduardo Skrock, desenvolvedor e designer especializado em presença digital para profissionais de saúde mental. Combinei minha formação técnica em Análise e Desenvolvimento de Sistemas com uma pós-graduação em Desenvolvimento Web para criar algo simples, porém raro: <strong>sites que realmente funcionam para psicólogos.</strong>
+          </p>
+          <p class="qf-bio">
+            Entendo as particularidades do setor — a necessidade de transmitir acolhimento, sigilo e profissionalismo ao mesmo tempo. Cada projeto é tratado individualmente, com cuidado real e comunicação direta.
+          </p>
+
+          <div class="qf-stats-row">
+            <div class="qf-stat">
+              <div class="qf-stat-num">10+</div>
+              <div class="qf-stat-label">Sites entregues</div>
+            </div>
+            <div class="qf-stat">
+              <div class="qf-stat-num">4 anos</div>
+              <div class="qf-stat-label">de experiência</div>
+            </div>
+            <div class="qf-stat">
+              <div class="qf-stat-num">100%</div>
+              <div class="qf-stat-label">de satisfação</div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5541988707816?text=Olá%20Eduardo!%20Vi%20seu%20portfólio%20e%20quero%20conversar%20sobre%20um%20site%20para%20meu%20consultório" class="btn-primary qf-cta" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9.234 9.234 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.463 3.48 11.815 11.815 0 0012.05 0z"/></svg>
+            Falar com o desenvolvedor
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FAQ
+  ══════════════════════════════ -->
+  <section id="faq">
+    <div class="faq-section">
+      <div class="faq-header">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title reveal">Perguntas <em>frequentes</em></h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            Quanto tempo demora para ficar pronto?
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              O prazo padrão é de 7 dias úteis após recebermos todas as informações necessárias pelo briefing. Para o pacote Elite (5 páginas), o prazo pode ser de até 14 dias úteis dependendo da complexidade.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Preciso ter domínio e hospedagem?
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Não se preocupe com isso! Cuidamos de todo o processo técnico: domínio, hospedagem, certificado SSL e publicação. Você só precisa nos dizer o que quer e nós fazemos o resto.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Posso pedir mudanças no design?
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim! Todos os pacotes incluem pelo menos 1 rodada de revisão. O pacote Elite inclui 3 rodadas completas de revisão. Queremos que você fique 100% satisfeito com o resultado.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Consigo atualizar o site depois?
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim! Entregamos acesso completo ao painel de gerenciamento onde você pode atualizar textos, fotos e informações. Também oferecemos planos de manutenção mensal para quem preferir deixar conosco.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            O site vai me ajudar a aparecer no Google?
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Todos os nossos sites são construídos com SEO (otimização para mecanismos de busca). Isso significa que o Google consegue encontrar e indexar seu site. Para resultados mais expressivos, o pacote Pro e Elite incluem estratégias avançadas de palavras-chave locais.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Como é feito o pagamento?
+            <div class="faq-chevron">▾</div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Aceitamos PIX, cartão de crédito (em até 12x) e transferência bancária. O pagamento é único — sem mensalidades ou taxas escondidas. Cobramos 50% no início e 50% na entrega.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CTA FINAL
+  ══════════════════════════════ -->
+  <section class="cta-section" id="contato">
+    <div class="cta-glow"></div>
+    <div class="section-tag reveal">Próximo passo</div>
+    <h2 class="section-title reveal reveal-delay-1">
+      Seu futuro paciente está<br/>
+      pesquisando <em>agora.</em><br/>
+      Você aparece?
+    </h2>
+    <p class="cta-sub reveal reveal-delay-2">
+      Comece hoje. Em 7 dias seu consultório estará aberto 24 horas para o mundo digital.
+    </p>
+    <div class="cta-actions reveal reveal-delay-3">
+      <a href="https://wa.me/5541988707816?text=Olá!%20Quero%20um%20site%20para%20meu%20consultório%20de%20psicologia" class="btn-white" target="_blank" rel="noopener">
+        💬 Falar pelo WhatsApp
+      </a>
+      <a href="mailto:psicologiaemsite@gmail.com?subject=Quero%20um%20site%20para%20meu%20consultório" class="btn-outline-white">
+        ✉ Enviar e-mail
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">Psicologia <span>em Site</span></a>
+          <p>Transformamos o trabalho de psicólogos em presença digital que atrai, conecta e converte pacientes.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Produto</h5>
+            <ul>
+              <li><a href="#por-que">Por que ter um site</a></li>
+              <li><a href="#pacotes">Pacotes</a></li>
+              <li><a href="#processo">Como funciona</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Empresa</h5>
+            <ul>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Portfólio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Afiliados</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contato</h5>
+            <ul>
+              <li><a href="https://wa.me/5541988707816" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a href="mailto:psicologiaemsite@gmail.com">E-mail</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 Psicologia em Site. Todos os direitos reservados.</div>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Instagram">ig</a>
+          <a href="https://wa.me/5541988707816" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp">↗</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+  <!-- Floating WhatsApp FAB -->
+  <a href="https://wa.me/5541988707816?text=Olá!%20Quero%20um%20site%20para%20meu%20consultório" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0
+  </a>
+</body>
