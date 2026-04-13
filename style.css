@@ -435,7 +435,7 @@ nav.scrolled {
 }
 .marquee-track {
   display: flex; gap: 2.5rem;
-  animation: marquee 22s linear infinite; white-space: nowrap;
+  animation: marquee 8s linear infinite; white-space: nowrap;
 }
 @keyframes marquee {
   from { transform: translateX(0); }
@@ -1349,7 +1349,7 @@ footer { background: #111a18; padding: 3.5rem 1.25rem 2rem; }
 
 /* Photo column */
 .qf-photo-col { flex: 0 0 260px; display: flex; flex-direction: column; gap: 1.5rem; }
-
+.qf-photo-col > img{border-radius: 20px;}
 .qf-photo-wrap { position: relative; }
 .qf-photo-placeholder {
   width: 100%; aspect-ratio: 3/4; max-height: 320px;
